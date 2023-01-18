@@ -1,3 +1,4 @@
+import {registrarMedico} from '../../services/registrarmedico.js'
 export function validarFormulario(datos){
 
 //referencia a etiquetas que quiero validar
@@ -54,6 +55,7 @@ export function validarFormulario(datos){
             footer: '<a href="">SEA SERIO (A)</a>'
           })
     }else{
+        registrarMedico(datos)
         etiquetaNombre.classList.remove("is-invalid")
         etiquetaDocumento.classList.remove("is-invalid")
         Swal.fire({

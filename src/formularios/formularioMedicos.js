@@ -14,7 +14,7 @@ export function capturarDatos(etiquetaNombre, etiquetaDocumento,etiquetaEspecial
 
     //debemos almacenar todos los valores del formulario en una sola variable
     //creamos objeto=almacenar varios datos en 1 solo espacio de memoria
-    let datosFormularioMedico = {nombre : nombresMedico,
+    let datosFormularioMedico = {nombres : nombresMedico,
         documento : documentoMedico,
         especialidad : especialidadMedico, 
         registro : registroMedico,
@@ -22,7 +22,7 @@ export function capturarDatos(etiquetaNombre, etiquetaDocumento,etiquetaEspecial
         sede : sedeMedico,
         horario : horarioMedico,
         descripcion : descripcionMedico,
-        foto: imagenMedico}
+        imagen: imagenMedico}
         //console.log(datosFormularioMedico)
         validarFormulario(datosFormularioMedico)
 
